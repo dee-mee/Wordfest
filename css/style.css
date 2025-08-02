@@ -9221,7 +9221,12 @@ textarea {
   .hero, .hero > .container > .row {
     height: auto;
     min-height: 100vh;
-    padding: 60px 0;
+    padding: 100px 0 60px; /* Increased top padding to 100px to account for header */
+  }
+  
+  /* Ensure header has proper height */
+  .site-navbar {
+    min-height: 70px;
   }
   
   .hero .intro-text {
