@@ -172,6 +172,11 @@ body {
     padding: 2rem 0 !important;
     font-size: 13px !important; } }
 
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-bottom: 5rem; } }
+
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
