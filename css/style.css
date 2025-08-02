@@ -9216,6 +9216,41 @@ textarea {
 .opacity-5 {
   opacity: 0.5 !important; }
 
+/* Mobile-specific hero section fixes */
+@media (max-width: 767.98px) {
+  .hero, .hero > .container > .row {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+  }
+  
+  .hero .intro-text {
+    padding: 40px 0;
+  }
+  
+  .hero .col-lg-7 {
+    margin-top: 30px;
+  }
+  
+  .hero p.opacity-5 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .hero .video-bg {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 .hero {
   background-size: cover;
   background-position: center center;
