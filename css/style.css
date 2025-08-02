@@ -71,6 +71,10 @@
     width: 100%;
     height: auto;
   }
+  .section .col-12.col-md-4.mb-4 img {
+    width: 100%;
+    height: auto;
+  }
   .site-footer {
     padding: 2rem 0 !important;
     font-size: 13px !important;
