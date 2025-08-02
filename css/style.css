@@ -53,6 +53,7 @@
   .hero-heading {
     font-size: 1.4rem;
     word-break: break-word;
+    margin-bottom: 1rem !important; /* Add space below heading */
   }
   .hero-subheading {
     font-size: 1.1rem !important;
@@ -74,6 +75,7 @@
 
 
 
+/*
 * Template Author: Untree.co
 * Template License: https://creativecommons.org/licenses/by/3.0/
 * Author URI: https://untree.co/
