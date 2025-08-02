@@ -35,12 +35,9 @@
   .row {
     margin-left: 0;
     margin-right: 0;
-    flex-direction: column;
     gap: 0.5rem;
   }
   [class^="col-"], [class*=" col-"] {
-    width: 100%;
-    max-width: 100%;
     padding-left: 0;
     padding-right: 0;
   }
