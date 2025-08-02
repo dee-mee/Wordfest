@@ -9233,8 +9233,19 @@ textarea {
     padding: 40px 0;
   }
   
+  /* Video section on mobile */
   .hero .col-lg-7 {
     margin-top: 30px;
+    order: 1; /* Ensure it comes after the text on mobile */
+    padding: 0 15px; /* Add some horizontal padding */
+  }
+  
+  /* Ensure the video container is full width */
+  .hero .video-bg {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
   }
   
   .hero p.opacity-5 {
