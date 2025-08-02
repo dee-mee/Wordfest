@@ -1,93 +1,177 @@
-/*
-* Template Name: TheChurch
-*/
+body {
+  overflow-x: hidden; }
 
-.upcoming-sermon-img {
-  max-width: 100%;
-  width: 220px;
-  height: auto;
-}
+.unslate_co--site-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
 
-/* Fix logo and hero section overlap on mobile */
+.unslate_co--site-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+#testimonial-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  #testimonial-nav > span {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px; }
+    #testimonial-nav > span.prev {
+      left: -10px; }
+    #testimonial-nav > span.next {
+      right: -10px; }
+
+.testimonial-slide-center-wrap {
+  position: relative;
+  z-index: 1; }
+
+.testimonial-slide-center {
+  margin-left: -100px;
+  margin-right: -100px; }
+  .testimonial-slide-center .item {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    opacity: .2;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    position: relative;
+    top: 0; }
+    .testimonial-slide-center .item.tns-nav-active {
+      z-index: 2; }
+  .testimonial-slide-center .tns-nav-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    top: -20px; }
+
+.testimonial-item-inner {
+  background: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 7px; }
+  .testimonial-item-inner blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: #000; }
+
+.testimonial-author {
+  display: block;
+  margin-top: 30px; }
+  .testimonial-author img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: inline-block; }
+  .testimonial-author strong {
+    font-weight: 700;
+    color: #000; }
+  .testimonial-author span {
+    display: block;
+    font-size: 14px;
+    color: #b3b3b3; }
+
+.testimonial-nav {
+  position: relative;
+  z-index: 1; }
+  .testimonial-nav span {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    cursor: pointer; }
+    .testimonial-nav span.prev {
+      left: -50px; }
+    .testimonial-nav span.next {
+      right: -50px; }
+
+@media (max-width: 991.98px) {
+  .testimonial-slide-center {
+    margin-left: 0;
+    margin-right: 0; }
+  .testimonial-nav span.prev {
+    left: 0px; }
+  .testimonial-nav span.next {
+    right: 0px; } }
+
 .logo {
   font-size: 20px;
   color: #fff !important;
   font-weight: 700;
   position: relative;
   z-index: 10;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-  background: rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   padding: 4px 12px;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 @media (max-width: 991.98px) {
   .hero .row {
-    flex-direction: row !important;
-  }
-
+    flex-direction: row !important; }
   .container, .container-fluid {
     padding-left: 8px;
     padding-right: 8px;
     width: 100%;
-    max-width: 100%;
-  }
+    max-width: 100%; }
   .row {
     margin-left: 0;
     margin-right: 0;
-    gap: 0.5rem;
-  }
+    gap: 0.5rem; }
   [class^="col-"], [class*=" col-"] {
     padding-left: 0;
-    padding-right: 0;
-  }
+    padding-right: 0; }
   .section {
     padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
-  }
+    padding-bottom: 2.5rem !important; }
   .hero .intro-text {
     padding-top: 30px;
     padding-bottom: 10px;
-    background: rgba(0,0,0,0.18);
-    border-radius: 8px;
-  }
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 8px; }
   .hero-heading {
     font-size: 1.4rem;
     word-break: break-word;
-    margin-bottom: 1rem !important; /* Add space below heading */
-  }
+    margin-bottom: 1rem !important;
+    /* Add space below heading */ }
   .hero-subheading {
-    font-size: 1.1rem !important;
-  }
+    font-size: 1.1rem !important; }
   .logo {
     font-size: 1rem;
     padding: 2px 6px;
-    margin-bottom: 6px;
-  }
+    margin-bottom: 6px; }
   .sermon-entry img {
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
   .section .col-12.col-md-4.mb-4 img {
     width: 100%;
-    height: auto;
-  }
+    height: auto; }
   .site-footer {
     padding: 2rem 0 !important;
-    font-size: 13px !important;
-  }
-}
+    font-size: 13px !important; } }
 
-
-
-/*
-* Template Author: Untree.co
-* Template License: https://creativecommons.org/licenses/by/3.0/
-* Author URI: https://untree.co/
-
-* Twitter: https://twitter.com/Untree_co
-* Facebook: https://web.facebook.com/Untree.co/
-*/
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
