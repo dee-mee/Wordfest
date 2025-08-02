@@ -1,5 +1,6 @@
 /*
 * Template Name: TheChurch
+*/
 
 .upcoming-sermon-img {
   max-width: 100%;
@@ -8722,6 +8723,17 @@ textarea.form-control-lg {
 .site-nav {
   padding-top: 20px;
   padding-bottom: 20px; }
+
+@media (max-width: 991.98px) {
+  .site-menu-toggle,
+  .burger {
+    display: inline-block !important;
+  }
+  .site-menu {
+    display: none !important;
+  }
+}
+
   .site-nav h1, .site-nav .h1 {
     margin: 0;
     padding: 0;
@@ -8873,7 +8885,7 @@ textarea.form-control-lg {
   width: 300px;
   position: fixed;
   right: 0;
-  z-index: 2000;
+  z-index: 9999;
   padding-top: 20px;
   background: #fff;
   height: calc(100vh);
@@ -9099,6 +9111,11 @@ textarea.form-control-lg {
 
 .burger:focus {
   outline: none; }
+
+/* Helper class for debugging layout issues */
+* {
+  /* outline: 1px solid red; */
+}
 
 body {
   font-family: "Inter", sans-serif;
