@@ -178,7 +178,12 @@ body {
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    padding-bottom: 5rem; } }
+    min-height: 0;
+    padding-top: 10rem;
+    padding-bottom: 10rem; }
+
+  .upcoming-sermon {
+    margin-top: -10rem; } }
 
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
