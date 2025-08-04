@@ -9735,7 +9735,8 @@ textarea {
   color: rgba(0, 0, 0, 0.5); }
 
 .sec-cta {
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  margin-bottom: 5rem; }
 
 .custom-pagination a {
   display: inline-block;
