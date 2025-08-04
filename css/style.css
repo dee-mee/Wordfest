@@ -148,41 +148,52 @@ body {
 /* Go to Top Button */
 .go-to-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   background-color: #D4AF37;
   color: white;
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
   cursor: pointer;
   display: none;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .go-to-top:hover {
   background-color: #B8941F;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transform: translateZ(0) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .go-to-top.show {
   display: block;
-  animation: fadeInUp 0.3s ease;
+  opacity: 1;
+  transform: translateZ(0);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+  .go-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  
+  .go-to-top:hover {
+    transform: translateZ(0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -9358,7 +9369,11 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   color: #555;
-  background-color: #faf8ff; }
+  background-color: #faf8ff;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important; }
 
 /* Purple and Gold Theme Enhancements */
 .section.bg-secondary {
@@ -9893,7 +9908,10 @@ textarea {
   background: linear-gradient(135deg, var(--purple-primary) 0%, var(--purple-dark) 50%, var(--gold-primary) 100%);
   font-size: 14px;
   color: #fff;
-  padding: 70px 0; }
+  padding: 40px 0 0 0;
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important; }
   .site-footer a {
     color: #fff;
     position: relative;
